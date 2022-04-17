@@ -16,4 +16,15 @@ public class Author {
     @Column(name = "age")
     private Integer age;
 
+    public Author() {
+    }
+
+    public Author(Long id) {
+        this.id = id;
+    }
+
+    public Author(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 }
